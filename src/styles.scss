@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/scss/bootstrap";
+
+:root {
+    --cor1: #0b4b20;
+    --cor2: #1b7f43;
+    --cor3: #18af54;
+    --cor4: #0fb84f;
+    --corHoverEscuro: rgba(30, 44, 17, 0.575);
+    --corHoverClaro: rgba(133, 182, 83, 0.575);
+    --corFontPrincipal: white;
+    --corFontSecundaria: rgb(5, 5, 5);
+    --corOuro: #fef000;
+    --corOuroEscuro: #c9bf0d;
+    --corGradientCircle: radial-gradient(at top right, var(--cor4) 10%, var(--cor3) 20%, var(--cor2) 70%);
+    --corGradientFooter: linear-gradient(135deg, var(--cor4), var(--cor4), var(--cor1));
+}
+body, html{
+    min-height: 100%;
+    margin: 0px;
+    background: var(--corGradientCircle) no-repeat;
+}
+// html{
+// }
+div {
+    font-family: "Oxygen", sans-serif;
+    color: var(--corFontPrincipal)
+}
+h3{
+    font-size: 16pt;
+}
+@media (max-width: 750px) {
+    h3{
+        font-size: 11pt !important;
+    }
+}

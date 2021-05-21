@@ -1,0 +1,14 @@
+.divs {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: var(--corFontPrincipal);
+    cursor: pointer;
+}
+.logo {
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}

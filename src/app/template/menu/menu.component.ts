@@ -1,0 +1,25 @@
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
+@Component({
+  selector: 'app-menu',
+  templateUrl: './menu.component.html',
+  styleUrls: ['./menu.component.scss']
+})
+export class MenuComponent implements OnInit {
+
+  constructor(private router: Router) { }
+
+  ngOnInit(){
+  }
+
+  goTo(page: any){
+    if(page === 0){
+      this.router.navigate(["/home"])
+    }
+    else if(page === 1){
+      this.router.navigate(["/politicas/privacidade"])
+    }
+  }
+
+}
